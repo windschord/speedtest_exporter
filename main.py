@@ -23,7 +23,7 @@ class SpeedTestServer:
 
 
 def speed_test(server_id=None):
-    cmd = ["speedtest", "--json"]
+    cmd = ["speedtest", "--accept-license", "--json"]
     if server_id is not None:
         cmd.append("--server")
         cmd.append(server_id)
